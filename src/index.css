@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+@layer base {
+  :root {
+    --bg: #f9fafb;
+    --text: #1f2937;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+:root {
+  --bg: #ffffff;
+  --text: #1f2937; /* gray-800 */
+}
+
+html.dark {
+  --bg: #1a202c;   /* gray-900 */
+  --text: #ffffff;
+}
+
